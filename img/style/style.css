@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    height: 1200px;
+}
+
+.container {
+    width: 940px;
+    height: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-row-gap: 10px;
+    grid-template-areas: "title""nav""article""green1""main""green2""footer""copy1";
+}
+
+h1 {
+    text-transform: uppercase;
+    grid-area: title;
+    margin: 0;
+}
+
+nav {
+    height: 50px;
+    background-color: #8FC73E;
+    display: flex;
+    align-items: center;
+    grid-area: nav;
+}
+
+.nav {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.navs_para {
+    font-weight: bolder;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "article_text article_img";
+    grid-column-gap: 15px;
+    grid-area: article;
+}
+
+.article_text h2 {
+    text-align: center;
+}
+
+.article_text {
+    width: 100%;
+    height: 100%;
+    grid-area: article_text;
+    padding: 0 5px 10px 5px;
+    border: 10px solid #E5E5E6;
+}
+
+.article_img {
+    width: 96%;
+    grid-area: article_img;
+}
+
+.article_img img {
+    border: 10px solid #E5E5E6;
+    width: 100%;
+    height: 100%;
+
+}
+
+.finish {
+    font-weight: bolder;
+    color: #679AD1;
+}
+
+.green_line {
+    width: 100%;
+    background-color: #8FC73E;
+    height: 2vh;
+    grid-area: green1;
+}
+
+.green_line2 {
+    width: 100%;
+    background-color: #8FC73E;
+    height: 2vh;
+    grid-area: green2;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-area: main;
+}
+
+.main_title {
+    width: 100%;
+}
+
+.main_title h3 {
+    color: #528CCA;
+}
+
+.down_block {
+    background-color: #E5E5E6;
+    height: 105px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "first second third";
+    grid-column-gap: 15px;
+    padding: 5px 0 0 5px;
+    grid-area: footer;
+}
+
+.second_title {
+    width: 100%;
+}
+
+.first {
+    grid-area: first;
+}
+
+.second {
+    grid-area: second;
+}
+
+.third {
+    grid-area: third;
+}
+
+.copy_right {
+    grid-area: copy1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". copy .";
+}
+
+.copy {
+    grid-area: copy;
+    text-align: center;
+    font-weight: bolder;
+    margin: 0;
+}

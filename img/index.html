@@ -1,243 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>dz 13</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-
-            font-size: 100%;
-            height: 1200px;
-
-
-
-        }
-
-
-
-        .container {
-            width: 940px;
-            height: 1200px;
-            margin: auto;
-            display: grid;
-            grid-template-rows: auto;
-
-            grid-template-columns: auto;
-            grid-row-gap: 10px;
-            grid-template-areas: "title""nav""article""green1""main""green2""footer""copy1";
-
-
-
-        }
-
-
-        h1 {
-            text-transform: uppercase;
-            grid-area: title;
-            margin: 0;
-        }
-
-        nav {
-            height: 50px;
-            background-color: #8FC73E;
-            display: flex;
-            align-items: center;
-            grid-area: nav;
-
-
-        }
-
-        .nav {
-            display: flex;
-            width: 50%;
-            justify-content: space-around;
-        }
-
-        .navs_para {
-            font-weight: bolder;
-        }
-
-        article {
-
-            display: grid;
-            grid-template-columns: 60% 40%;
-            grid-template-rows: 1fr;
-            grid-template-areas: "article_text article_img";
-            grid-column-gap: 15px;
-            grid-area: article;
-
-
-
-        }
-
-        .article_text h2 {
-            text-align: center;
-        }
-
-
-
-
-        .article_text {
-            width: 100%;
-            height: 100%;
-            grid-area: article_text;
-            padding: 0 5px 10px 5px;
-            border: 10px solid #E5E5E6;
-
-        }
-
-        .article_img {
-            width: 96%;
-            grid-area: article_img;
-
-        }
-
-        .article_img img {
-            border: 10px solid #E5E5E6;
-            width: 100%;
-            height: 100%;
-
-        }
-
-
-
-
-        .finish {
-            font-weight: bolder;
-            color: #679AD1;
-
-
-        }
-
-        .green_line {
-            width: 100%;
-            background-color: #8FC73E;
-            height: 2vh;
-            grid-area: green1;
-        }
-
-        .green_line2 {
-            width: 100%;
-            background-color: #8FC73E;
-            height: 2vh;
-            grid-area: green2;
-        }
-
-        .main {
-
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-gap: 20px;
-            grid-area: main;
-        }
-
-
-
-
-
-
-
-
-
-        .main_title {
-            width: 100%;
-        }
-
-        .main_title h3 {
-            color: #528CCA;
-        }
-
-        .down_block {
-            background-color: #E5E5E6;
-            /*            display: grid;*/
-            height: 105px;
-            width: 100%;
-            display: grid;
-
-
-
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-            grid-template-areas: "first second third";
-            grid-column-gap: 15px;
-
-
-            padding-top: 5px;
-            padding-left: 5px;
-            grid-area: footer;
-        }
-
-        .second_title {
-            width: 100%;
-
-        }
-
-
-
-
-        .first {
-            grid-area: first;
-        }
-
-        .second {
-            grid-area: second;
-
-        }
-
-        .third {
-            grid-area: third;
-        }
-
-
-
-
-
-
-
-        .copy_right {
-            grid-area: copy1;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-            grid-template-areas: ". copy .";
-
-        }
-
-        .copy {
-            grid-area: copy;
-            text-align: center;
-            font-weight: bolder;
-            margin: 0;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style/style.css">
 </head>
-
 <body>
     <div class="container">
         <h1>My Magazine</h1>
 
         <nav>
             <div class="nav">
-
                 <div class="navs_para">Article</div>
                 <div class="navs_para">Topics</div>
                 <div class="navs_para">About</div>
                 <div class="navs_para">Editors</div>
                 <div class="navs_para">Contact</div>
             </div>
-
-
         </nav>
         <article>
             <div class="article_text">
                 <h2>Sample Article Title</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae illo quisquam eius, odit sed incidunt labore culpa veniam reprehenderit ratione qui voluptatibus, similique totam deserunt? Eos fugiat sunt neque aperiam eaque dolor inventore, ad reiciendis labore rem ullam consequatur illo beatae tempora ea, corporis quidem adipisci et! Corrupti rem cumque quibusdam doloribus, officia, praesentium repellendus obcaecati necessitatibus error eius suscipit vero, fugiat itaque accusamus iure perspiciatis blanditiis, voluptatem odit quo quae qui! Odit temporibus fugiat, quaerat ducimus sed quod corporis nam suscipit voluptate voluptatem, officiis, atque repellendus consequatur laborum dolores! Ipsam tempora neque, in minus rem, eaque praesentium aut mollitia?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae illo quisquam eius, odit sed incidunt
+                    labore culpa veniam reprehenderit ratione qui voluptatibus, similique totam deserunt? Eos fugiat sunt
+                    neque aperiam eaque dolor inventore, ad reiciendis labore rem ullam consequatur illo beatae tempora
+                    ea, corporis quidem adipisci et! Corrupti rem cumque quibusdam doloribus, officia, praesentium
+                    repellendus obcaecati necessitatibus error eius suscipit vero, fugiat itaque accusamus iure
+                    perspiciatis blanditiis, voluptatem odit quo quae qui! Odit temporibus fugiat, quaerat ducimus
+                    sed quod corporis nam suscipit voluptate voluptatem, officiis, atque repellendus consequatur laborum
+                    dolores! Ipsam tempora neque, in minus rem, eaque praesentium aut mollitia?
+                </p>
                 <p class=finish>Finish Reading...</p>
             </div>
             <div class="article_img">
@@ -248,37 +40,68 @@
         <div class="main">
             <div class="main_title">
                 <h3>Sample Article Title</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam accusamus, perferendis explicabo fugit, beatae dolor repellendus alias vero odio perspiciatis id error quaerat a. Minima eos excepturi pariatur, consequuntur laudantium veritatis aliquid repellendus. Rem expedita velit sed officiis laboriosam, impedit corporis quaerat consequuntur, sint recusandae accusantium aut, quisquam itaque. Nihil dolorem adipisci nesciunt nemo, inventore hic. Pariatur voluptate alias laborum sint, perferendis a iusto! Cum odit eum similique fuga animi a hic voluptates facilis quam! Voluptatem sunt, eius laboriosam voluptate dolorum fugit eos, est aliquam vero deleniti. Laborum facilis perspiciatis reprehenderit doloremque odio, nihil illum omnis, adipisci distinctio, sapiente ullam!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam accusamus, perferendis explicabo fugit,
+                beatae dolor repellendus alias vero odio perspiciatis id error quaerat a. Minima eos excepturi pariatur,
+                consequuntur laudantium veritatis aliquid repellendus. Rem expedita velit sed officiis laboriosam, impedit
+                corporis quaerat consequuntur, sint recusandae accusantium aut, quisquam itaque. Nihil dolorem adipisci
+                nesciunt nemo, inventore hic. Pariatur voluptate alias laborum sint, perferendis a iusto! Cum odit eum
+                similique fuga animi a hic voluptates facilis quam! Voluptatem sunt, eius laboriosam voluptate dolorum
+                fugit eos, est aliquam vero deleniti. Laborum facilis perspiciatis reprehenderit doloremque odio, nihil
+                illum omnis, adipisci distinctio, sapiente ullam!
             </div>
             <div class="main_title">
 
                 <h3>Sample Article Title</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quia, necessitatibus eaque molestias excepturi laboriosam ullam reiciendis minima veniam praesentium provident, quod aliquid consectetur tenetur itaque ab. Sapiente inventore quasi accusamus aliquid doloremque reprehenderit fugiat veritatis eveniet. Eveniet natus nesciunt maxime et nemo libero adipisci. Quas aliquam accusantium neque ea, alias adipisci dicta aut fugit itaque commodi ratione velit dolores optio consectetur molestiae. Reprehenderit magnam quod, autem nostrum tempora voluptatem voluptatibus eveniet rem reiciendis provident, odio beatae iste laboriosam animi fugit a cumque delectus assumenda magni neque fugiat. Modi optio porro atque fugiat sint, dolores praesentium aliquid itaque deleniti veritatis.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quia, necessitatibus eaque molestias
+                excepturi laboriosam ullam reiciendis minima veniam praesentium provident, quod aliquid consectetur
+                tenetur itaque ab. Sapiente inventore quasi accusamus aliquid doloremque reprehenderit fugiat veritatis
+                eveniet. Eveniet natus nesciunt maxime et nemo libero adipisci. Quas aliquam accusantium neque ea, alias
+                adipisci dicta aut fugit itaque commodi ratione velit dolores optio consectetur molestiae. Reprehenderit
+                magnam quod, autem nostrum tempora voluptatem voluptatibus eveniet rem reiciendis provident, odio beatae
+                iste laboriosam animi fugit a cumque delectus assumenda magni neque fugiat. Modi optio porro atque fugiat
+                sint, dolores praesentium aliquid itaque deleniti veritatis.
             </div>
             <div class="main_title">
                 <h3>Sample Article Title</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aspernatur eos cum hic repellendus laborum, similique maiores. Est distinctio accusamus possimus, soluta molestiae harum ut rem accusantium neque, tempore aperiam rerum ipsum corporis enim. Eaque modi voluptatibus, voluptatem ipsum explicabo illum possimus, rem, praesentium quam voluptate incidunt ab! Quam tenetur iste blanditiis molestias placeat voluptatem, aliquid sit quibusdam ipsam sapiente culpa optio, magnam libero accusantium nam, voluptas. Aliquid aliquam rerum incidunt repellat commodi natus itaque corrupti, consectetur voluptate placeat error, fugiat. Aperiam recusandae modi consectetur sed laborum a. Voluptatum ipsum, dolor? Ratione qui adipisci, tenetur id! Totam, commodi illo.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aspernatur eos cum hic repellendus
+                laborum, similique maiores. Est distinctio accusamus possimus, soluta molestiae harum ut rem accusantium
+                neque, tempore aperiam rerum ipsum corporis enim. Eaque modi voluptatibus, voluptatem ipsum explicabo
+                illum possimus, rem, praesentium quam voluptate incidunt ab! Quam tenetur iste blanditiis molestias
+                placeat voluptatem, aliquid sit quibusdam ipsam sapiente culpa optio, magnam libero accusantium nam,
+                voluptas. Aliquid aliquam rerum incidunt repellat commodi natus itaque corrupti, consectetur voluptate
+                placeat error, fugiat. Aperiam recusandae modi consectetur sed laborum a. Voluptatum ipsum, dolor?
+                Ratione qui adipisci, tenetur id! Totam, commodi illo.
             </div>
             <div class="main_title">
                 <h3>Sample Article Title</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam cum sint a mollitia est, laboriosam sapiente qui officia quis accusantium minima eveniet ducimus, placeat nulla nihil facilis. Accusantium sint minima, libero quam reprehenderit voluptatem sed vitae deserunt. Ratione praesentium reiciendis quaerat quam, nulla dolorem veritatis at repudiandae adipisci ipsa, incidunt doloremque dolorum magnam sit ipsam nihil autem doloribus tempore, illum, ea. Quisquam sed blanditiis voluptatem. Molestias esse consectetur explicabo accusamus tempore neque omnis ad inventore aliquid necessitatibus, consequuntur numquam placeat ea ipsum a eos obcaecati ratione aspernatur ducimus, laudantium, odit in. Expedita perferendis consequuntur, recusandae esse iusto provident quibusdam, at.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam cum sint a mollitia est,
+                laboriosam sapiente qui officia quis accusantium minima eveniet ducimus, placeat nulla nihil facilis.
+                Accusantium sint minima, libero quam reprehenderit voluptatem sed vitae deserunt. Ratione praesentium
+                reiciendis quaerat quam, nulla dolorem veritatis at repudiandae adipisci ipsa, incidunt doloremque dolorum
+                magnam sit ipsam nihil autem doloribus tempore, illum, ea. Quisquam sed blanditiis voluptatem. Molestias
+                esse consectetur explicabo accusamus tempore neque omnis ad inventore aliquid necessitatibus, consequuntur
+                numquam placeat ea ipsum a eos obcaecati ratione aspernatur ducimus, laudantium, odit in. Expedita
+                perferendis consequuntur, recusandae esse iusto provident quibusdam, at.
             </div>
         </div>
 
-
-
         <div class="green_line2"></div>
         <div class="down_block">
-            <div class="second_title first ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque corporis ducimus praesentium in facilis sunt temporibus eius qui deleniti. Minima, minus explicabo itaque aliquid.</div>
-            <div class="second_title second ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio aspernatur, eius hic, iusto voluptatibus delectus obcaecati quas molestiae. Sint impedit itaque rerum nulla eaque placeat!</div>
-            <div class="second_title third ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, laborum placeat soluta recusandae nobis, ad accusantium doloribus, voluptatum tempora id sint in quaerat consectetur, explicabo.</div>
+
+            <div class="second_title first ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque
+                corporis ducimus praesentium in facilis sunt temporibus eius qui deleniti. Minima, minus explicabo itaque aliquid.
+            </div>
+            <div class="second_title second ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio aspernatur,
+                eius hic, iusto voluptatibus delectus obcaecati quas molestiae. Sint impedit itaque rerum nulla eaque placeat!
+            </div>
+            <div class="second_title third ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, laborum placeat
+                soluta recusandae nobis, ad accusantium doloribus, voluptatum tempora id sint in quaerat consectetur, explicabo.
+            </div>
 
         </div>
         <div class="copy_right">
             <p class="copy">&copy;My Magazine</p>
-
         </div>
-
 
     </div>
 
